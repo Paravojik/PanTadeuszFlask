@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pan Tadeusz</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            min-height:100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header{
+            width: 100%;
+            padding: 10px 20px ;
+            background-color: rgb(70, 70, 70);
+            text-align: center;
+            color: white;
+        }
+        section{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+            flex-wrap: wrap;
+        }
+        .sidebar{
+            min-width: 300px;
+            text-align: center;
+            background-color: rgb(70, 70, 70);
+            color: white;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        li{
+            width: 100%;
+            background-color: white;
+            
+            border-top: 1px solid rgb(70, 70, 70);
+            padding: 5px 10px;
+            text-align: left;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        a{
+            
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            transition: 0.5s;
+        }
+        a:hover{
+            background-color: rgb(70, 70, 70);
+            color: white;
+        }
+        li:hover{
+            background-color: rgb(70, 70, 70);
+        }
+        footer{
+            width: 100%;
+            padding: 10px 20px ;
+            background-color: rgb(70, 70, 70);
+            text-align: center;
+            color: white;
+        }
+        .main_content{
+            max-width: 1000px;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            background-color: rgb(70, 70, 70);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        img{
+            width: 300px;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pan Tadeusz</h1>
+    </header>
+    <section>
+        <div class="sidebar">
+            <h2>Table of contents</h2>
+        <ul class="list-unstyled">
+            
+            <a href="./"><li> Home Page</li></a>
+            <a href="./k1"><li> Book 1</li></a>
+            <a href="./k2"><li> Book 2</li></a>
+            <a href="./k3"><li> Book 3</li></a>
+            <a href="./k4"><li> Book 4</li></a>
+            <a href="./k5"><li> Book 5</li></a>
+            <a href="./k6"><li> Book 6</li></a>
+            <a href="./k7"><li> Book 7</li></a>
+            <a href="./k8"><li> Book 8</li></a>
+            <a href="./k9"><li> Book 9</li></a>
+            <a href="./k10"><li> Book 10</li></a>
+            <a href="./k11"><li> Book 11</li></a>
+            <a href="./k12"><li> Book 12</li></a>
+        </ul>
+        </div>
+        <div class="main_content">
+            <h1>Sir Thaddeus, or the Last Foray in Lithuania: A Nobility's Tale of the Years 1811–1812, in Twelve Books of Verse</h1>
+            <p>Treść wiadomości Gemini
+                Pan Tadeusz (fully titled Sir Thaddeus, or the Last Foray in Lithuania: A Nobility's Tale of the Years 1811–1812, in Twelve Books of Verse) is an epic poem written by the Polish Romantic poet Adam Mickiewicz in 1834. It is widely considered the national epic of Poland.
+                
+                The story is set in 1811 and 1812 in a fictional village called Soplicowo, just before Napoleon's invasion of Russia. The plot weaves together two main storylines: a bitter, long-standing feud between two rival noble families (the Soplicas and the Horeszkos) and a romance between young Tadeusz and Zosia, which ultimately unites the warring houses.
+                
+                Underlying the personal drama is a deeply patriotic theme. The characters must put aside their personal grievances to organize a rebellion against the Russian Empire, hoping that an alliance with Napoleon's advancing army will help restore the independence of the Polish-Lithuanian Commonwealth. The poem is beloved for its beautiful, nostalgic descriptions of the countryside, noble traditions, and the fading way of life of the local gentry.</p>
+            <img src="https://multibook.pl/userdata/public/gfx/16419/Adam-Mickiewicz--Pan-Tadeusz.jpg" alt="">
+        </div>
+    </section>
+    <section>
+        {% block content%}
+            <p>Layout file</p>
+        {% endblock %}
+
+    </section>
+    <footer>
+        <p>  Vitalii Mykhaloiko, Krakow University of Economics</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
